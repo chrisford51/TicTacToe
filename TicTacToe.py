@@ -75,9 +75,9 @@ def win_check(board, mark):
 
 def choose_first():
 	if random.randint(0,1) == 0:
-		return 'Player 1'
+		return ('Player 1')
 	else:
-		return 'Player 2'
+		return ('Player 2')
 
 ## Space Check ## 
 
@@ -118,7 +118,7 @@ while True:
 	turn = choose_first()
 	print(turn + ' will go first.')
 	
-	play_game = input('Are you ready to play? Enter Yes or No.')
+	play_game = input('Are you ready to play? Enter Yes or No. ')
 
 	if play_game.lower()[0] == 'y':
 		game_on = True
